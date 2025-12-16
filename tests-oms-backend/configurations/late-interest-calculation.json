@@ -1,0 +1,43 @@
+{
+  "scenario_id": "SC001",
+  "installment": {
+    "house_price": 3000000,
+    "installment_amount": 2500000,
+    "interest_rate_annual": 7.5,
+    "late_interest_rate_annual": 10.0,
+    "installment_count": 37,
+    "payment_frequency": "MONTHLY",
+    "first_due_date": "2025-01-05",
+    "fee_per_installment": 100
+  },
+  "installments": [
+    {
+      "no": 1,
+      "check": true,
+      "is_late": false,
+      "late_days": 0,
+      "waive_fee": false
+    },
+    {
+      "no": 2,
+      "check": true,
+      "is_late": true,
+      "late_days": 15,
+      "waive_fee": false
+    },
+    {
+      "no": 5,
+      "check": true,
+      "is_late": true,
+      "late_days": 30,
+      "waive_fee": true
+    },
+    {
+      "no": 10,
+      "check": true,
+      "is_late": false,
+      "late_days": 0,
+      "waive_fee": false
+    }
+  ]
+}

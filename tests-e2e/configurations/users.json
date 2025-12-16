@@ -1,0 +1,14 @@
+{
+  "userSeller": {
+    "email": "penploy.qa@gmail.com",
+    "password": "Test@1234"
+  },
+  "userBuyer": {
+    "email": "penploy.s@gmail.com",
+    "password": "Test@1234"
+  },
+  "userInvestor": {
+    "email": "broiyemosocoi-5483@yopmail.com",
+    "password": "Test@1234"
+  }
+}
