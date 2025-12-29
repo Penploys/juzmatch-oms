@@ -9,6 +9,7 @@
     "markdown.extension.toc.levels": "3..6",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "cSpell.words": [
+        "Authen",
         "endregion",
         "healthcheck",
         "juzmatch"

@@ -1,0 +1,38 @@
+{
+  "homeAsset": {
+    "projectName": "โครงการบ้าน",
+    "assetLandSize": "120",
+    "assetAreaSize": "100",
+    "houseNumber": "123/65",
+    "numberFloor": "4",
+    "brandDevelop": "ศุภาลัย",
+    "desiredSellingPrice": "4000000",
+    "realPriceLocator": "4000000",
+    "bankPrice": "4000000",
+    "specifyTheAddressNumber": "725/23",
+    "province": "กรุงเทพมหานคร",
+    "districts": "จตุจักร",
+    "subDistrict": "เสนานิคม",
+    "postCode": "10900",
+    "googleMap": "https://www.google.com/maps/place/%E0%B8%8B%E0%B8%AD%E0%B8%A2+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%A3%E0%B8%B1%E0%B8%8D%E0%B8%97%E0%B8%A3+%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%94+%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B8+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3+10140+%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2/@13.6430656,100.4779878,17z/data=!3m1!4b1!4m6!3m5!1s0x30e2a301a2fc1283:0x9be5f89fc5daac78!8m2!3d13.6430656!4d100.4805627!16s%2Fg%2F1hm2_q4xx?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+    "furniture": "ตกแต่งครบ"
+  },
+  "editHomeAsset": {
+    "projectName": "โครงการบ้าน",
+    "assetLandSize": "200",
+    "assetAreaSize": "200",
+    "houseNumber": "789/54",
+    "numberFloor": "5",
+    "brandDevelop": "เอพี",
+    "desiredSellingPrice": "5000000",
+    "realPriceLocator": "5000000",
+    "bankPrice": "5000000",
+    "specifyTheAddressNumber": "88/8",
+    "province": "กรุงเทพมหานคร",
+    "districts": "จอมทอง",
+    "subDistrict": "บางค้อ",
+    "postCode": "10140",
+    "googleMap": "https://www.google.com/maps/place/%E0%B8%8B%E0%B8%AD%E0%B8%A2+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%A3%E0%B8%B1%E0%B8%8D%E0%B8%97%E0%B8%A3+%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%94+%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B8+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3+10140+%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2/@13.6430656,100.4779878,17z/data=!3m1!4b1!4m6!3m5!1s0x30e2a301a2fc1283:0x9be5f89fc5daac78!8m2!3d13.6430656!4d100.4805627!16s%2Fg%2F1hm2_q4xx?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+    "furniture": "ไม่มี"
+  }
+}

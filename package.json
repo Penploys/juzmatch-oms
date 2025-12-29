@@ -25,5 +25,8 @@
   },
   "engines": {
     "node": "22.13.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0"
   }
 }
