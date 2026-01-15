@@ -4,16 +4,16 @@ import { BasePage } from '../base-page'
 
 export class InvestorPage extends BasePage {
   readonly bookingButtonLocator: Locator = this.page.locator('button:has(.icon-add):has-text("ซื้อสิทธ์การลงทุน")')
-  readonly buyBookingLocator: Locator = this.page.locator('button:has-text("ชำระเงิน")')
-  readonly qrPromPayLocator: Locator = this.page.locator('div.cardHeader:has-text("QR พร้อมเพย์")')
+  readonly paymentButtonLocator: Locator = this.page.locator('button:has-text("ชำระเงิน")')
+  readonly qrPromtPayLocator: Locator = this.page.locator('div.cardHeader:has-text("QR พร้อมเพย์")')
   readonly confirmButtonLocator: Locator = this.page.locator('button:has-text("ยืนยันการชำระเงิน")')
   readonly payByQRCodeLocator: Locator = this.page.locator('button:has-text("For Test")')
-  readonly buttonForTestLocator: Locator = this.page.locator('button', { hasText: 'For Test' })
+  readonly forTestButtonLocator: Locator = this.page.locator('button', { hasText: 'For Test' })
 
   async investorBooking() {
     await this.bookingButtonLocator.nth(0).click()
-    await this.buyBookingLocator.click()
-    await this.qrPromPayLocator.click()
+    await this.paymentButtonLocator.click()
+    await this.qrPromtPayLocator.click()
     await this.confirmButtonLocator.click()
     // await this.payByQRCodeLocator.click()
     const [newPage] = await Promise.all([

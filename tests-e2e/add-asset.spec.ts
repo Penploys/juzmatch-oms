@@ -21,8 +21,7 @@ test('Seller add new asset no data', async ({ configuration, page, loginPage, se
   await page.goto(configuration.appSetting.baseURL)
   await loginPage.sumbitLogin(user.email, user.password)
   await loginPage.loginSuccess('seller')
-  await sellerPage.sellerAddSellerInformationNoData()
-  await page.waitForTimeout(5000)
+  await sellerPage.SellerAddNewAssetNoData()
 })
 
 test('Seller view detail asset', async ({ configuration, page, loginPage, sellerPage }) => {

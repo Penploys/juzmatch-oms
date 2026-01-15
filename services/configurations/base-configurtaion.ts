@@ -44,7 +44,7 @@ export class LoginPage extends BasePage {
   }
 
   async loginSuccess(urlPath: string) {
-    await this.page.waitForURL(`**/${urlPath}/**`, { timeout: 30_000 })
+    // await this.page.waitForURL(`**/${urlPath}/**`, { timeout: 30_000 })
     await expect(this.page).toHaveURL(new RegExp(`${urlPath}`))
   }
 }
