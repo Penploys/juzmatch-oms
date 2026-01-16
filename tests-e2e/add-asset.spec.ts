@@ -1,4 +1,5 @@
 import { test } from '@fixtures/e2e-fixture'
+import { viewAnnouncementCode, viewAssetByHouseName, viewEditHome } from '@tests-e2e/configurations/asset-search.json'
 
 test('Seller add new asset', async ({ configuration, page, loginPage, sellerPage }) => {
   const user = configuration.users.userSeller
@@ -38,7 +39,12 @@ test('Seller view asset by announce code', async ({ configuration, page, loginPa
   await page.goto(configuration.appSetting.baseURL)
   await loginPage.sumbitLogin(user.email, user.password)
   await loginPage.loginSuccess('seller')
-  await sellerPage.sellerViewAssetByAnnounceCode()
+  await sellerPage.sellerViewAssetByAnnounceCode({
+    announcementCode: viewAnnouncementCode.unitCode,
+    houseName: viewAnnouncementCode.houseName,
+    price: viewAnnouncementCode.housePrice,
+    address: viewAnnouncementCode.houseAddress
+  })
   await page.waitForTimeout(5000)
 })
 
@@ -47,7 +53,12 @@ test('Seller view asset by house name', async ({ configuration, page, loginPage,
   await page.goto(configuration.appSetting.baseURL)
   await loginPage.sumbitLogin(user.email, user.password)
   await loginPage.loginSuccess('seller')
-  await sellerPage.sellerViewAssetByHouseName()
+  await sellerPage.sellerViewAssetByHouseName({
+    announcementCode: viewAssetByHouseName.unitCode,
+    houseName: viewAssetByHouseName.houseName,
+    price: viewAssetByHouseName.housePrice,
+    address: viewAssetByHouseName.houseAddress
+  })
   await page.waitForTimeout(5000)
 })
 
@@ -61,6 +72,11 @@ test('Seller edit detail asset', async ({ configuration, page, loginPage, seller
   await sellerPage.editAddressProject()
   await sellerPage.editFurniture()
   await sellerPage.confirmEditNewProject()
-  await sellerPage.viewEditNewAsset()
+  await sellerPage.viewEditNewAsset({
+    announcementCode: viewEditHome.unitCode,
+    houseName: viewEditHome.houseName,
+    price: viewEditHome.housePrice,
+    address: viewEditHome.houseAddress
+  })
   await page.waitForTimeout(5000)
 })

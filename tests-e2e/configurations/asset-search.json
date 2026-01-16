@@ -1,8 +1,21 @@
 {
-  "assetCode": {
-    "announcementCode": "S251112678"
+  "viewAnnouncementCode": {
+    "unitCode": "S251112678",
+    "houseName": "บ้านงามเจริญ พระราม 2",
+    "housePrice": "5,775,000 บาท",
+    "houseAddress": "999 หมู่ 1 ตำบลหนองปรือ อำเภอบางพลี จังหวัดสมุทรปราการ 10540"
   },
-  "assetName": {
-    "searchHouseName": "บ้านชิซูกะจัง"
+  "viewAssetByHouseName": {
+    "unitCode": "S251202721",
+    "houseName":"บ้านชิซูกะ",
+    "housePrice": "6,825,000 บาท",
+    "houseAddress": "3/56"
+  },
+  "viewEditHome": {
+    "unitCode": "S260115828",
+    "houseName": "โครงการบ้านสปายคุง",
+    "housePrice": "5,000,000 บาท",
+    "houseAddress": "88/8 ด่านมะขามเตี้ย, กาญจนบุรี"
+
   }
 }

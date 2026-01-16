@@ -4,8 +4,6 @@ import { BasePage } from '../base-page'
 import { faker } from '@faker-js/faker'
 import { imageInterior, imageCommonArea, imageFacility } from '@tests-e2e/configurations/image-asset.json'
 import { homeAsset, editHomeAsset } from '@tests-e2e/configurations/asset-info.json'
-import { assetCode, assetName } from '@tests-e2e/configurations/asset-search.json'
-
 
 export class SellerPage extends BasePage {
   readonly addAssetButtonLocator: Locator = this.page.locator('span.body-normal.text-white', {
@@ -64,12 +62,15 @@ export class SellerPage extends BasePage {
   readonly assetDetailCardLocator: Locator = this.page.locator('div.sc-ggWZvA.hcTUKX h2.title-sm')
   readonly assetHouseIdLocator: Locator = this.page.locator('a[href="/propertydetail/24211"]')
   readonly houseNameH2CardLocator: Locator = this.page.locator('.title-sm.text-txt-brand.leading-tight.mb-2')
-  readonly housePriceCardLocator: Locator = this.page.locator('div.label.font-bold.text-txt-primary-on-light.mb-2.border-t.pt-2')
+  readonly housePriceCardLocator: Locator = this.page.locator(
+    'div.label.font-bold.text-txt-primary-on-light.mb-2.border-t.pt-2'
+  )
   readonly houseAddressCardLocator: Locator = this.page.locator('div.sc-fhHczv.dtlniB')
   readonly editSpecifyTheAddressNumberInputLocator: Locator = this.page
     .locator('div.form-field', {
       hasText: 'เลขที่อยู่/ถนน/ซอย'
-      }).locator('input')
+    })
+    .locator('input')
   readonly editProvinceDropdownLocator: Locator = this.page.locator('.ant-select-selection-item').nth(2)
   readonly editProvinceInputLocator: Locator = this.page.locator('.ant-select-item-option-content')
   readonly editSubDistrictInputLocator: Locator = this.page.locator('#subdistricts_id')
@@ -80,7 +81,6 @@ export class SellerPage extends BasePage {
   readonly sellerTelephoneNumberInputLocator: Locator = this.page.locator('#sellertel')
   readonly latitudeInputLocator: Locator = this.page.locator('#latitude')
   readonly longitudeInputLocator: Locator = this.page.locator('#longitude')
-
 
   async sellerAddSellerInformation() {
     await this.addAssetButtonLocator.click()
@@ -165,29 +165,29 @@ export class SellerPage extends BasePage {
     await this.sellerInformationDropDownLocator.click()
     await this.buttonConfirmLocator.click()
 
-    await expect(this.validationErrorLocator.nth(0)).toHaveText("กรุณาระบุ ประเภทผู้ขาย")
-    await expect(this.validationErrorLocator.nth(1)).toHaveText("กรุณาระบุ ชื่อผู้ขาย")
-    await expect(this.validationErrorLocator.nth(2)).toHaveText("กรุณาระบุ เบอร์โทรศัพท์ผู้ขาย")
-    await expect(this.validationErrorLocator.nth(3)).toHaveText("กรุณาระบุ ชื่อโครงการ (ภาษาไทย)")
-    await expect(this.validationErrorLocator.nth(4)).toHaveText("กรุณาระบุ ชื่อโครงการ (ภาษาอังกฤษ)")
-    await expect(this.validationErrorLocator.nth(5)).toHaveText("กรุณาระบุ ขนาดที่ดิน")
-    await expect(this.validationErrorLocator.nth(6)).toHaveText("กรุณาระบุ พื้นที่ใช้สอย")
-    await expect(this.validationErrorLocator.nth(7)).toHaveText("กรุณาอัพโหลดรูปภาพ ภาพห้อง และบรรยากาศภายใน")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ เลขที่บ้าน/เลขที่ห้อง/รหัสแปลง")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ จำนวนชั้น")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ จำนวนห้องนอน")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ ผู้พัตนาโครงการ")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ ราคาที่ต้องการขาย")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ ราคาประเมินที่กู้ได้จริง")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ ราคาหน้าสัญญายื่นธนาคาร")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ เลขที่อยู่/ถนน/ซอย")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ จังหวัด")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ เขต/อำเภอ")
-    await expect(this.validationErrorLocator).toHaveText("ตำบล/แขวง")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ รหัสไปรษณีย์")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุละติจูด")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุลองจิจูด")
-    await expect(this.validationErrorLocator).toHaveText("กรุณาระบุ เฟอร์นิเจอร์")
+    await expect(this.validationErrorLocator.nth(0)).toHaveText('กรุณาระบุ ประเภทผู้ขาย')
+    await expect(this.validationErrorLocator.nth(1)).toHaveText('กรุณาระบุ ชื่อผู้ขาย')
+    await expect(this.validationErrorLocator.nth(2)).toHaveText('กรุณาระบุ เบอร์โทรศัพท์ผู้ขาย')
+    await expect(this.validationErrorLocator.nth(3)).toHaveText('กรุณาระบุ ชื่อโครงการ (ภาษาไทย)')
+    await expect(this.validationErrorLocator.nth(4)).toHaveText('กรุณาระบุ ชื่อโครงการ (ภาษาอังกฤษ)')
+    await expect(this.validationErrorLocator.nth(5)).toHaveText('กรุณาระบุ ขนาดที่ดิน')
+    await expect(this.validationErrorLocator.nth(6)).toHaveText('กรุณาระบุ พื้นที่ใช้สอย')
+    await expect(this.validationErrorLocator.nth(7)).toHaveText('กรุณาอัพโหลดรูปภาพ ภาพห้อง และบรรยากาศภายใน')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ เลขที่บ้าน/เลขที่ห้อง/รหัสแปลง')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ จำนวนชั้น')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ จำนวนห้องนอน')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ ผู้พัตนาโครงการ')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ ราคาที่ต้องการขาย')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ ราคาประเมินที่กู้ได้จริง')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ ราคาหน้าสัญญายื่นธนาคาร')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ เลขที่อยู่/ถนน/ซอย')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ จังหวัด')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ เขต/อำเภอ')
+    await expect(this.validationErrorLocator).toHaveText('ตำบล/แขวง')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ รหัสไปรษณีย์')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุละติจูด')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุลองจิจูด')
+    await expect(this.validationErrorLocator).toHaveText('กรุณาระบุ เฟอร์นิเจอร์')
   }
 
   async sellerViewAsset() {
@@ -200,27 +200,43 @@ export class SellerPage extends BasePage {
     await expect(this.detailOfAddressHouseLocator).toHaveText('725/23 เสนานิคม จตุจักร กรุงเทพมหานคร 10900')
   }
 
-  async sellerViewAssetByAnnounceCode() {
+  async sellerViewAssetByAnnounceCode(params: {
+    announcementCode: string
+    houseName: string
+    price: string
+    address: string
+  }) {
+    const { announcementCode, houseName, price, address } = params
+
     await this.searchForRentalPurchaseButtonLocator.click()
     await this.searchBarInputLocator.click()
-    await this.searchBarInputLocator.fill(assetCode.announcementCode)
-    await expect(this.assetHouseIdLocator).toHaveCount(1)
-    if ((await this.assetHouseIdLocator.count()) > 0) {
-      await expect(this.houseNameH2CardLocator).toHaveText('บ้านงามเจริญ พระราม 2')
-      await expect(this.housePriceCardLocator).toHaveText('5,775,000 บาท')
-      await expect(this.houseAddressCardLocator).toHaveText('999 หมู่ 1 ตำบลหนองปรือ อำเภอบางพลี จังหวัดสมุทรปราการ 10540')
-    }
+    await this.searchBarInputLocator.fill(announcementCode)
 
+    await expect(this.assetHouseIdLocator).toHaveCount(1)
+
+    if ((await this.assetHouseIdLocator.count()) > 0) {
+      await expect(this.houseNameH2CardLocator).toHaveText(houseName)
+      await expect(this.housePriceCardLocator).toHaveText(price)
+      await expect(this.houseAddressCardLocator).toHaveText(address)
+    }
   }
 
-  async sellerViewAssetByHouseName() {
+  async sellerViewAssetByHouseName(params: {
+    announcementCode: string
+    houseName: string
+    price: string
+    address: string
+  }) {
+    const { announcementCode, houseName, price, address } = params
+
     await this.searchForRentalPurchaseButtonLocator.click()
     await this.searchBarInputLocator.click()
-    await this.searchBarInputLocator.fill(assetName.searchHouseName)
+    await this.searchBarInputLocator.fill(announcementCode)
+
     if ((await this.assetHouseIdLocator.count()) > 0) {
-      await expect(this.houseNameH2CardLocator).toHaveText('บ้านชิซูกะ')
-      await expect(this.housePriceCardLocator).toHaveText('6,825,000 บาท')
-      await expect(this.houseAddressCardLocator).toHaveText('3/56')
+      await expect(this.houseNameH2CardLocator).toHaveText(houseName)
+      await expect(this.housePriceCardLocator).toHaveText(price)
+      await expect(this.houseAddressCardLocator).toHaveText(address)
     }
   }
 
@@ -277,12 +293,19 @@ export class SellerPage extends BasePage {
   async confirmEditNewProject() {
     await this.confirmEditButtonLocator.nth(1).click()
   }
-  async viewEditNewAsset() {
+
+  async viewEditNewAsset(params: { announcementCode: string; houseName: string; price: string; address: string }) {
+    const { houseName, price, address } = params
+
     await this.viewAssetButtonLocator.click()
+
     if ((await this.assetHouseIdLocator.count()) > 0) {
-      await expect(this.houseNameH2CardLocator).toHaveText('โครงการบ้านสปายคุง')
-      await expect(this.housePriceCardLocator).toHaveText('5,000,000 บาท')
-      await expect(this.houseAddressCardLocator).toHaveText('88/8 ด่านมะขามเตี้ย, กาญจนบุรี')
+      await expect(this.houseNameH2CardLocator).toHaveText(houseName)
+      console.log(houseName)
+      await expect(this.housePriceCardLocator).toHaveText(price)
+      console.log(price)
+      await expect(this.houseAddressCardLocator).toHaveText(address)
+      console.log(address)
     }
   }
 }
